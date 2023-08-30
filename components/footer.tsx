@@ -4,12 +4,11 @@ export default function Footer() {
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
       <small className="mb-2 block text-xs">
-        &copy; 2030 Ricardo. All rights reserved.
+        &copy; 2030 Yanuar Bima. All rights reserved.
       </small>
       <p className="text-xs">
-        <span className="font-semibold">About this website:</span> built with
-        React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-        Framer Motion, React Email & Resend, Vercel hosting.
+        This site is built with Next.js and Tailwind CSS. Another tech used are Framer Motion, React Icons, and React Hook Form.
+        The source code is hosted on Github and deployed on Vercel.S
       </p>
     </footer>
   );
