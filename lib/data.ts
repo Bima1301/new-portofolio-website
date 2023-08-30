@@ -115,7 +115,7 @@ export const projectsData = [
       "This project is for Ciamis competition website terminal. I made it with ReactJS and Bootstrap.",
     tags: ["ReactJs", "SwiperJs", "Bootstrap"],
     imageUrl: ciamis,
-    url: "https://yanuarbima.netlify.app",
+    url: "https://sipinterciamis.vercel.app/",
     githubUrl: "https://github.com/mlthada7/sipinterciamis",
 
   },
@@ -124,7 +124,7 @@ export const projectsData = [
     description: "This website project is used to calculate merchandise stock. I made it with Laravel Breeze ",
     tags: ["Laravel", "PHP", "MySQL", "Bootstrap", "SCSS"],
     imageUrl: maryana,
-    url: "https://yanuarbima.netlify.app",
+    url: "https://maryana.cloud/",
     githubUrl: "https://github.com/Bima1301/telkomsel-point",
 
   },
@@ -133,7 +133,7 @@ export const projectsData = [
     description: "This is my experimental project, make with ReactJs and ThreeJS. This website is deployed on Vercel and hasn't been completed yet",
     tags: ["ReactJs", "ThreeJS", "TailwindCSS", "FramerMotion"],
     imageUrl: secondPorto,
-    url: "https://yanuarbima.vercel.app",
+    url: "https://yanuar-bima.vercel.app",
     githubUrl: "https://github.com/Bima1301/my3d-portfolio"
   },
   {
