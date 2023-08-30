@@ -28,6 +28,7 @@ export default function RightContent() {
                         }}
                     >
                         <Image
+                            priority
                             src={imgProfile}
                             height="550"
                             quality="95"

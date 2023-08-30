@@ -70,7 +70,7 @@ export default function Project({
             src={imageUrl}
             alt="Project I worked on"
             quality={95}
-
+            loading="lazy"
           />
         </Link>
         <Link target="_blank" href={githubUrl} className="z-[999] top-0 group-even:right-0 w-fit h-fit absolute">
