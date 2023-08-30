@@ -15,7 +15,7 @@ export default function Experience() {
   const { ref } = useSectionInView("Experiences", 0.3);
   const { theme } = useTheme();
   return (
-    <section id="experiences" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experiences" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40 overflow-hidden">
       <SectionHeading>
         <div className="text-start w-fit">
           <p>

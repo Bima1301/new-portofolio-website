@@ -20,7 +20,7 @@ export default function RightContent() {
                 </div>
                 <div className='bg-[#7d7ab1] rounded-full md:px-10 overflow-hidden md:py-20 md:w-[380px] md:h-[580px] h-52 w-32 relative xl:ms-32  me-0'>
                     <motion.div
-                        className='md:absolute left-10 bottom-0 z-[99]'
+                        className='absolute md:left-7 -left-2 md:bottom-0 -bottom-16'
                         animate={{ y: [0, 10, 0] }}
                         transition={{
                             duration: 5,

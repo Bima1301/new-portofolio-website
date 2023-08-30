@@ -23,7 +23,7 @@ export default function LeftContent() {
             </div>
             <div className='mt-14 flex flex-row gap-6'>
                 <div className='h-1 bg-black dark:bg-white w-10 mt-2' />
-                <p className='text-start w-fit max-w-xl'>Hi! My name <span className='font-semibold'>Bima</span>. I&apos;am a Full Stack Developer --- creating responsive and interactive website for personal or companies all acros the world</p>
+                <p className='text-start w-fit max-w-xl'>Hi! My name <span className='font-semibold'>Bima</span>. I&apos;am a Full Stack Developer --- creating responsive and interactive website for personal or companies all across the world</p>
             </div>
             <motion.div
                 className="flex sm:flex-row items-center justify-center md:justify-start gap-2  text-lg font-medium md:mt-14 mt-7"
@@ -50,7 +50,7 @@ export default function LeftContent() {
                     href="/YanuarBimaCV.pdf"
                     download
                 >
-                    Download CV{" "}
+                    See my CV{" "}
                     <HiDownload size={24} className="opacity-60 group-hover:translate-y-1 transition" />
                 </Link>
 
@@ -61,7 +61,7 @@ export default function LeftContent() {
                 <div className='flex flex-row items-center justify-around md:w-fit w-full md:justify-start md:gap-4 gap-0 '>
                     <a
                         className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/yanuar-bimantoro-aji-874232196/"
                         target="_blank"
                     >
                         <CiLinkedin size={28} />
@@ -69,14 +69,14 @@ export default function LeftContent() {
 
                     <a
                         className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                        href="https://github.com"
+                        href="https://github.com/Bima1301"
                         target="_blank"
                     >
                         <FaGithubSquare />
                     </a>
                     <a
                         className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-                        href="https://instagram.com"
+                        href="https://instagram.com/yanuar.bimantoro"
                         target="_blank"
                     >
                         <BsInstagram />
