@@ -23,7 +23,7 @@ export default function LeftContent() {
             </div>
             <div className='mt-14 flex flex-row gap-6'>
                 <div className='h-1 bg-black dark:bg-white w-10 mt-2' />
-                <p className='text-start w-fit max-w-xl'>Hi! My name <span className='font-semibold'>Bima</span>. I'am a Full Stack Developer --- creating responsive and interactive website for personal or companies all acros the world</p>
+                <p className='text-start w-fit max-w-xl'>Hi! My name <span className='font-semibold'>Bima</span>. I&apos;am a Full Stack Developer --- creating responsive and interactive website for personal or companies all acros the world</p>
             </div>
             <motion.div
                 className="flex sm:flex-row items-center justify-center md:justify-start gap-2  text-lg font-medium md:mt-14 mt-7"
@@ -41,7 +41,7 @@ export default function LeftContent() {
                         setTimeOfLastClick(Date.now());
                     }}
                 >
-                    Let's Talk{" "}
+                    Let&apos;s Talk{" "}
                     <BiPaperPlane size={27} className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
 

@@ -28,31 +28,19 @@ export default function About() {
       <div className=" flex  md:gap-5 flex-col">
         <div className="text-center">
           <p className="mb-3">
-            After graduating with a degree in{" "}
-            <span className="font-medium">Accounting</span>, I decided to pursue my
-            passion for programming. I enrolled in a coding bootcamp and learned{" "}
-            <span className="font-medium">full-stack web development</span>.{" "}
-            <span className="italic">My favorite part of programming</span> is the
-            problem-solving aspect. I <span className="underline">love</span> the
-            feeling of finally figuring out a solution to a problem. My core stack
-            is{" "}
-            <span className="font-medium">
-              React, Next.js, Node.js, and MongoDB
-            </span>
-            . I am also familiar with TypeScript and Prisma. I am always looking to
-            learn new technologies. I am currently looking for a{" "}
-            <span className="font-medium">full-time position</span> as a software
-            developer.
+            As a senior student majoring in{" "}
+            <span className="font-medium">Information Technology</span> at Brawijaya University, I became proficient in{" "}
+            <span className="font-medium">Laravel, ReactJs, NextJs</span>, and other technologies.{" "}
+            <span className="italic">I&apos;m particularly drawn to problem-solving</span>. I find immense satisfaction in successfully unraveling complex issues. I&apos;m also experienced with TypeScript and Prisma. I&apos;m always enthusiastic about embracing new technologies. Currently, I&apos;m actively seeking a{" "}
+            <span className="font-medium">full-time software developer position</span>.
           </p>
 
           <p>
-            <span className="italic">When I'm not coding</span>, I enjoy playing
-            video games, watching movies, and playing with my dog. I also enjoy{" "}
-            <span className="font-medium">learning new things</span>. I am currently
-            learning about{" "}
-            <span className="font-medium">history and philosophy</span>. I'm also
-            learning how to play the guitar.
+            <span className="italic">Outside the coding realm</span>, my interests span from indulging in video games and movies to{" "}
+            <span className="font-medium">exploring new horizons</span>. Presently, I&apos;m delving into the realms of{" "}
+            <span className="font-medium">history and philosophy</span>. I&apos;m also in the process of learning to play the piano.
           </p>
+
 
         </div>
         <div className="flex md:flex-row md:justify-around flex-col md:gap-10 max-w-6xl mt-12">

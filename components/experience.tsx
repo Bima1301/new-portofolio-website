@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -10,23 +10,19 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-import { useInView } from "framer-motion";
 
 export default function Experience() {
-  // const { ref } = useSectionInView("Experiences");
+  const { ref } = useSectionInView("Experiences", 0.3);
   const { theme } = useTheme();
-  const ref = useRef(null);
-  const inView = useInView(ref);
-  console.log(inView);
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+    <section id="experiences" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
       <SectionHeading>
         <div className="text-start w-fit">
           <p>
             My Experience
           </p>
           <small className="text-xl text-center dark:text-[#a8acd1] text-[#58567d] font-semibold">
-            Where I've Worked
+            Where I&apos;ve Worked
           </small>
         </div>
       </SectionHeading>

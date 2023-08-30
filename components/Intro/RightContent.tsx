@@ -59,7 +59,7 @@ export default function RightContent() {
                 </div>
             </div>
             <p className='absolute md:flex hidden font-semibold md:-right-10 right-0'>
-                "Coding harmony, crafting <br /> fullstack digital experiences."
+                &quot;Coding harmony, crafting <br /> fullstack digital experiences.&quot;
             </p>
         </motion.section>
     )
