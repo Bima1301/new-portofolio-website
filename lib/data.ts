@@ -12,7 +12,7 @@ import metamata from "@/public/porto/metamata.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
-
+import { LuWebhook } from "react-icons/lu";
 
 export const links = [
   {
@@ -77,7 +77,14 @@ export const experiencesData = [
     location: "Jakarta, Indonesia",
     description: "I specialize in full-stack web application development utilizing Laravel, React, and MySQL. My expertise involves crafting responsive and appealing user interfaces using React, incorporating UI/UX design principles. I create and manage MySQL databases to efficiently store and handle web application data. Complex business logic is seamlessly integrated, while application security is ensured through Laravel's security features. I also oversee the maintenance and enhancement of existing web applications, actively engaging in debugging and issue resolution to guarantee a seamless development process.",
     icon: React.createElement(BsCalendarEvent),
-    date: "January 2023 - Present (Part Time)",
+    date: "January 2023 - October 2023 (Part Time)",
+  },
+  {
+    title: "Nodewave (FE Developer)",
+    location: "Surabaya, Indonesia",
+    description: "I possess expertise in front-end development, particularly in utilizing React, Next.js, and TailwindCSS. My skills revolve around creating responsive and aesthetically pleasing user interfaces using React, incorporating fundamental UI/UX design principles. I excel in integrating APIs and third-party libraries to augment the application's capabilities and features. Additionally, I oversee the maintenance and enhancement of existing web applications, actively engaging in debugging and issue resolution to guarantee a seamless development process.",
+    icon: React.createElement(LuWebhook),
+    date: "October 2023 - Present (Full Time)",
   }
 ] as const;
 
