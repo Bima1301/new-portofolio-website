@@ -9,6 +9,8 @@ import { HiDownload } from "react-icons/hi";
 import { CiLinkedin } from 'react-icons/ci';
 import { FaGithubSquare } from "react-icons/fa";
 import { useActiveSectionContext } from '@/context/active-section-context';
+import { FaGitlab } from 'react-icons/fa';
+
 export default function LeftContent() {
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     return (
@@ -73,6 +75,13 @@ export default function LeftContent() {
                         target="_blank"
                     >
                         <FaGithubSquare />
+                    </a>
+                    <a
+                        className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                        href="https://gitlab.com/bima.aji1380"
+                        target="_blank"
+                    >
+                        <FaGitlab />
                     </a>
                     <a
                         className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
