@@ -74,7 +74,10 @@ export default function Project({
           />
         </Link>
         <Link target="_blank" href={githubUrl} className="z-[999] top-0 group-even:right-0 w-fit h-fit absolute">
-          <div className="m-1 rounded-full bg-[#7d7ab1] py-1 px-2 flex items-center font-medium text-white aspect-square  ">
+          <div
+            className={`m-1 rounded-full ${githubUrl == '' ? 'bg-gray-300 text-gray-100' : 'bg-[#7d7ab1] text-white'}
+             py-1 px-2 flex items-center font-medium  aspect-square`}
+          >
             <BsGithub size={20} />
           </div>
         </Link>

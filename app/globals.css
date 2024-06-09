@@ -13,3 +13,14 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+.vertical-timeline.vertical-timeline--two-columns {
+  width: 90% !important;
+  margin: 0 auto !important;
+}
+
+@media (min-width: 1170px) {
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 100% !important;
+  }
+}

@@ -38,7 +38,7 @@ export default function ProjectMobile(
             <div className="px-6 py-4">
                 <Link target="_blank" href={url} className="text-xl font-bold">{title}</Link>
                 <div className="flex items-center py-3">
-                    <Link target="_blank" href={githubUrl} className="mr-2 rounded-full bg-[#946263] py-1 px-2 flex items-center font-medium text-white aspect-square">
+                    <Link target="_blank" href={githubUrl} className={`mr-2 rounded-full ${githubUrl == '' ? 'bg-gray-300 text-gray-100' : 'bg-[#946263] text-white '} py-1 px-2 flex items-center font-medium aspect-square`}>
                         <BsGithub />
                     </Link>
                     <Link target="_blank" href={url} className="mr-2 rounded-full bg-[#946263] py-1 px-2 flex items-center font-medium text-white aspect-square">

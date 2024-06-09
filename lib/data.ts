@@ -9,6 +9,8 @@ import bimsNews from "@/public/porto/bimsNews.png";
 import secondPorto from "@/public/porto/secondPorto.png";
 import tlogo from "@/public/porto/tlogo.png";
 import metamata from "@/public/porto/metamata.png";
+import subud from "@/public/porto/subud.png";
+import wbTodo from "@/public/porto/wb-todo.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -45,46 +47,94 @@ export const experiencesData = [
   {
     title: "Community Service Program (FS Developer)",
     location: "Malang, Indonesia",
-    description:
-      "In this collaborative project, I worked closely with the village secretary to gather the website requirements. Alongside the team, we crafted a wireframe as a visual guide. Proceeding from there, I implemented the system over a span of 3 weeks, translating designs and wireframes into a functional website code. Throughout this process, the Laravel framework was employed for the Back-End, while Front-End was enriched with libraries like SwiperJS and AOS. I also undertook debugging tasks and ensured the hosting of the website with a reputable hosting service.",
     icon: React.createElement(GiVillage),
     date: "July 2022 - August 2022",
+    details: [
+      'Collaborated with the village secretary to gather website requirements',
+      'Crafted a wireframe as a visual guide',
+      'Implemented the system over a span of 3 weeks',
+      'Translated designs and wireframes into a functional website code',
+      'Utilized the Laravel framework for the Back-End',
+      'Enriched the Front-End with libraries like SwiperJS and AOS',
+      'Undertook debugging tasks',
+      'Ensured the hosting of the website with a reputable hosting service'
+    ]
   },
   {
     title: "Meta Mata Indonesia Intership (FS Developer)",
     location: "Jakarta, Indonesia",
-    description:
-      "In a collaborative effort, I was responsible for translating website designs into code. Working alongside the team, I developed both the back-end and front-end using the Laravel framework, while utilizing ReactJs for front-end development. Ensuring optimal mobile accessibility was a key priority. I also created an Entity-Relationship Diagram (ERD), processed and analyzed the database, and guaranteed the application's responsiveness. Moreover, I collaborated closely with graphic designers to ensure cohesive web design.",
     icon: React.createElement(BsCalendarEvent),
     date: "November 2022 - January 2023",
+    details: [
+      'Translated website designs into code',
+      'Developed both the back-end and front-end using the Laravel framework',
+      'Utilized ReactJs for front-end development',
+      'Ensured optimal mobile accessibility',
+      'Created an Entity-Relationship Diagram (ERD)',
+      'Processed and analyzed the database',
+      'Guaranteed the application\'s responsiveness',
+      'Collaborated closely with graphic designers to ensure cohesive web design'
+    ]
   },
   {
     title: "Telkomsel (FS Developer)",
     location: "Malang, Indonesia",
-    description:
-      "I developed an intuitive and user-friendly inventory management dashboard utilizing Laravel, Breeze, and MySQL. This involved designing and implementing an efficient stock management system encompassing inventory control, sales monitoring, and inventory tracking. I incorporated analysis features and reporting tools to aid management decisions based on accurate stock data. Integration of the inventory administration system with other systems, such as purchasing or sales, was achieved to ensure data consistency. Additionally, I implemented robust security measures, including authentication and authorization, to safeguard sensitive data within the inventory administration system.",
     icon: React.createElement(MdOutlineInventory2),
     date: "December 2022",
+    details: [
+      'Developed an intuitive and user-friendly inventory management dashboard',
+      'Utilized Laravel, Breeze, and MySQL',
+      'Designed and implemented an efficient stock management system',
+      'Incorporated analysis features and reporting tools',
+      'Integrated the inventory administration system with other systems',
+      'Implemented robust security measures, including authentication and authorization'
+    ]
   },
   {
     title: "PT Arkatama Multi Solusindo (FS Developer)",
     location: "Malang, Indonesia",
-    description: "I am skilled in developing and maintaining full-stack web applications using the CodeIgniter framework. Collaborating closely with the design team, I implement user interfaces to ensure a seamless user experience. My focus includes writing clean, efficient, and scalable code for both front-end and back-end functionalities. I adeptly integrate APIs and third-party libraries to enhance the application's capabilities and features. My commitment to quality is demonstrated through comprehensive testing and debugging, ensuring the identification and resolution of issues or bugs. This results in the creation of high-quality, reliable web applications.",
     icon: React.createElement(CgWorkAlt),
     date: "February 2023 - June 2023",
+    details: [
+      'Developed and maintained full-stack web applications using the CodeIgniter and Laravel framework',
+      'Collaborated closely with the design team',
+      'Implemented user interfaces to ensure a seamless user experience',
+      'Wrote clean, efficient, and scalable code for both front-end and back-end functionalities',
+      'Created and maintained APIs for web applications',
+      'Committed to quality through comprehensive testing and debugging',
+      'Implemented Role Based Access Control (RBAC) as a security feature of the application',
+      'Working with Git for version control and collaboration with other developers',
+    ]
   }, {
     title: "Meta Mata Indonesia (FS Developer)",
     location: "Jakarta, Indonesia",
-    description: "I specialize in full-stack web application development utilizing Laravel, React, and MySQL. My expertise involves crafting responsive and appealing user interfaces using React, incorporating UI/UX design principles. I create and manage MySQL databases to efficiently store and handle web application data. Complex business logic is seamlessly integrated, while application security is ensured through Laravel's security features. I also oversee the maintenance and enhancement of existing web applications, actively engaging in debugging and issue resolution to guarantee a seamless development process.",
     icon: React.createElement(BsCalendarEvent),
     date: "January 2023 - October 2023 (Part Time)",
+    details: [
+      'Specialized in full-stack web application development utilizing Laravel, React, and MySQL',
+      'Crafted responsive and appealing user interfaces using React',
+      'Incorporated UI/UX design principles',
+      'Created and managed MySQL databases to efficiently store and handle web application data',
+      'Seamlessly integrated complex business logic',
+      'Ensured application security through Laravel\'s security features',
+      'Oversaw the maintenance and enhancement of existing web applications',
+      'Actively engaged in debugging and issue resolution',
+      'Using GitFlow for version control and collaboration with other developers',
+    ]
   },
   {
     title: "Nodewave (FE Developer)",
     location: "Surabaya, Indonesia",
-    description: "I possess expertise in front-end development, particularly in utilizing React, Next.js, and TailwindCSS. My skills revolve around creating responsive and aesthetically pleasing user interfaces using React, incorporating fundamental UI/UX design principles. I excel in integrating APIs and third-party libraries to augment the application's capabilities and features. Additionally, I oversee the maintenance and enhancement of existing web applications, actively engaging in debugging and issue resolution to guarantee a seamless development process.",
     icon: React.createElement(LuWebhook),
     date: "October 2023 - Present (Full Time)",
+    details: [
+      'Expertise in front-end development utilizing React, Next.js, and TailwindCSS',
+      'Created responsive and aesthetically pleasing user interfaces using React',
+      'Incorporated fundamental UI/UX design principles',
+      'Integrated APIs and third-party libraries to augment the application\'s capabilities and features',
+      'Oversaw the maintenance and enhancement of existing web applications',
+      'Actively engaged in debugging and issue resolution'
+    ]
   }
 ] as const;
 
@@ -165,6 +215,22 @@ export const projectsData = [
     imageUrl: metamata,
     url: "https://metamata.id/",
     githubUrl: "https://gitlab.com/ahmad.qorthony/metamata"
+  },
+  {
+    title: "Subud Congress Hotel Booking",
+    description: "This project is a hotel booking website for the Subud World Congress event. Using NextJs, TailwindCSS, and Ant Design for the Front End.",
+    tags: ["NextJs", "Typescript", "TailwindCSS", "Ant Design", "Midtrans", "REST API"],
+    imageUrl: subud,
+    url: "https://swchotels.com/",
+    githubUrl: ""
+  },
+  {
+    title: "To Do List",
+    description: "This project is a simple to do list with VueJs and TailwindCSS for the Front End and ExpressJs with Prisma and Supabase for the Back End. This project also has a REST API.",
+    tags: ["VueJs", "Typescript", "TailwindCSS", "ExpressJs", "Prisma ORM", "Supabase", "REST API"],
+    imageUrl: wbTodo,
+    url: "https://wb-todo-app.vercel.app",
+    githubUrl: "https://github.com/Bima1301/wb-todo-app"
   }
 ] as const;
 
@@ -176,6 +242,7 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Vue",
   "Next.js",
   "Node.js",
   "Git",

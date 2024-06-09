@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { GoDotFill } from "react-icons/go";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experiences", 0.3);
@@ -44,7 +45,9 @@ export default function Experience() {
                     ? "0.4rem solid #9ca3af"
                     : "0.4rem solid rgba(255, 255, 255, 0.5)",
               }}
+              // date={<p className="font-normal text-sm px-5 !mt-0">{item.date}</p>}
               date={item.date}
+              dateClassName="md:!font-normal !font-bold  !mx-3 !mt-0"
               icon={item.icon}
               iconStyle={{
                 background:
@@ -54,9 +57,19 @@ export default function Experience() {
             >
               <h3 className="font-semibold text-lg capitalize">{item.title}</h3>
               <p className="font-normal text-sm !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75 py-2">
+              {/* <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75 py-2">
                 {item.description}
-              </p>
+              </p> */}
+              <ul className="!font-normal text-gray-700 dark:text-white/75 !mt-1 py-2">
+                {item.details.map((desc, index) => (
+                  <li key={index} className="flex flex-row gap-1">
+                    <GoDotFill
+                      className="min-w-[1rem] min-h-[1rem] mt-1"
+                    />
+                    {desc}
+                  </li>
+                ))}
+              </ul>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
