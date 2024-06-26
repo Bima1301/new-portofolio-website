@@ -11,6 +11,8 @@ import tlogo from "@/public/porto/tlogo.png";
 import metamata from "@/public/porto/metamata.png";
 import subud from "@/public/porto/subud.png";
 import wbTodo from "@/public/porto/wb-todo.png";
+import nodewave from "@/public/porto/nodewave.png";
+import ajisaka from "@/public/porto/ajisaka.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -231,7 +233,23 @@ export const projectsData = [
     imageUrl: wbTodo,
     url: "https://wb-todo-app.vercel.app",
     githubUrl: "https://github.com/Bima1301/wb-todo-app"
-  }
+  },
+  {
+    title: "Ajisaka UGM",
+    description: "This project is a website for the Ajisaka UGM event. Using NextJs, TailwindCSS, and Framer Motion for the Front End.",
+    tags: ["NextJs", "Typescript", "TailwindCSS", "Framer Motion"],
+    imageUrl: ajisaka,
+    url: "https://ajisakaugm.id/",
+    githubUrl: ""
+  },
+  {
+    title: "Nodewave Website",
+    description: "This project is the company's official website. I made it with NextJs, TailwindCSS, and Framer Motion. This project is still under development and adding backend (Full Stack) using Prisma with Supabase",
+    tags: ["NextJs", "Typescript", "TailwindCSS", "Framer Motion", "Prisma ORM", "Supabase"],
+    imageUrl: nodewave,
+    url: "https://www.nodewave.id",
+    githubUrl: ""
+  },
 ] as const;
 
 export const skillsData = [
