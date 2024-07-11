@@ -253,7 +253,7 @@ export const projectsData = [
   },
   {
     title: "Profile Prof. Ikhwan Rinaldi",
-    description: "This project is a profile website for Prof. Dr. Dr. dr. Ikhwan Rinaldi, Sp.PD-KHOM, M. Epid, M.Pd.Ked, FACP, FINASIM. I made it with Laravel, ReactJs, TailwindCSS , and Framer Motion. This project has a testimonial and blog feature.",
+    description: "This project is a profile website for Prof. Ikhwan Rinaldi. I made it with Laravel, ReactJs, TailwindCSS , and Framer Motion. This project has a testimonial and blog feature.",
     tags: ["Laravel", "ReactJs", "TailwindCSS", "Framer Motion", "Aos"],
     imageUrl: ikhwanrinaldi,
     url: "https://ikhwanrinaldi.com",
