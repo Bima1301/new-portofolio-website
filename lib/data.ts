@@ -13,6 +13,7 @@ import subud from "@/public/porto/subud.png";
 import wbTodo from "@/public/porto/wb-todo.png";
 import nodewave from "@/public/porto/nodewave.png";
 import ajisaka from "@/public/porto/ajisaka.png";
+import ikhwanrinaldi from "@/public/porto/ikhwanrinaldi.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -250,6 +251,14 @@ export const projectsData = [
     url: "https://www.nodewave.id",
     githubUrl: ""
   },
+  {
+    title: "Profile Prof. Ikhwan Rinaldi",
+    description: "This project is a profile website for Prof. Dr. Dr. dr. Ikhwan Rinaldi, Sp.PD-KHOM, M. Epid, M.Pd.Ked, FACP, FINASIM. I made it with Laravel, ReactJs, TailwindCSS , and Framer Motion. This project has a testimonial and blog feature.",
+    tags: ["Laravel", "ReactJs", "TailwindCSS", "Framer Motion", "Aos"],
+    imageUrl: ikhwanrinaldi,
+    url: "https://ikhwanrinaldi.com",
+    githubUrl: ""
+  }
 ] as const;
 
 export const skillsData = [
