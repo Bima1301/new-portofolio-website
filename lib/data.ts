@@ -138,6 +138,18 @@ export const experiencesData = [
       'Oversaw the maintenance and enhancement of existing web applications',
       'Actively engaged in debugging and issue resolution'
     ]
+  },
+  {
+    title: "PT Jogiia Digital Indotech (FE Developer)",
+    location: "Yogyakarta, Indonesia",
+    icon: React.createElement(CgWorkAlt),
+    date: "October 2024 - February 2025",
+    details: [
+      'Integrated APIs and third-party libraries, utilizing tRPC for seamless backend communication',
+      'Utilized Zod for schema validation and React Hook Form for efficient form handling',
+      'Leveraged React Query for efficient data fetching, caching, and state management',
+      'Actively engaged in debugging and resolving issues to ensure optimal performance'
+    ]
   }
 ] as const;
 
