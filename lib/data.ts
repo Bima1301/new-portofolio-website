@@ -14,6 +14,8 @@ import wbTodo from "@/public/porto/wb-todo.png";
 import nodewave from "@/public/porto/nodewave.png";
 import ajisaka from "@/public/porto/ajisaka.png";
 import ikhwanrinaldi from "@/public/porto/ikhwanrinaldi.png";
+import bdkMedan from "@/public/porto/bdk-medan.png";
+import asbab from "@/public/porto/asbab.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -270,6 +272,22 @@ export const projectsData = [
     imageUrl: ikhwanrinaldi,
     url: "https://ikhwanrinaldi.com",
     githubUrl: ""
+  },
+  {
+    title: "BDK Medan",
+    description: "This project is a booking website for the BDK Medan, focusing on the management of training participants and the booking of halls and dormitories. ",
+    tags: ["Laravel", "ReactJs", "TailwindCSS", "Typescript"],
+    imageUrl: bdkMedan,
+    url: "https://arsik.bdkmedan.site/",
+    githubUrl: ""
+  },
+  {
+    title: "Asbab Group",
+    description: "This project is a company profile website for the Asbab Group, showcasing their services and facilitating.",
+    tags: ["Laravel", "ReactJs", "TailwindCSS", "Framer Motion", "Typescript"],
+    imageUrl: asbab,
+    url: "https://asbabgroup.com",
+    githubUrl: ""
   }
 ] as const;
 
@@ -283,6 +301,9 @@ export const skillsData = [
   "React",
   "Vue",
   "Next.js",
+  "tRPC",
+  "Zod",
+  "React Query",
   "Node.js",
   "Git",
   "Laravel",
