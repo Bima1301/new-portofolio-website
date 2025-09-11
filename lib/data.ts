@@ -16,6 +16,7 @@ import ajisaka from "@/public/porto/ajisaka.png";
 import ikhwanrinaldi from "@/public/porto/ikhwanrinaldi.png";
 import bdkMedan from "@/public/porto/bdk-medan.png";
 import asbab from "@/public/porto/asbab.png";
+import solmate from "@/public/porto/solmate.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -287,6 +288,14 @@ export const projectsData = [
     tags: ["Laravel", "ReactJs", "TailwindCSS", "Framer Motion", "Typescript"],
     imageUrl: asbab,
     url: "https://asbabgroup.com",
+    githubUrl: ""
+  },
+  {
+    title: "Solmate - Social Media Platform",
+    description: "Full-featured social media app with real-time messaging, infinite scroll, and optimistic updates.",
+    tags: ["Next.js 15", "TypeScript", "React Query", "Shadcn UI", "TailwindCSS"],
+    imageUrl: solmate,
+    url: "https://solmate-lilac.vercel.app/",
     githubUrl: ""
   }
 ] as const;
