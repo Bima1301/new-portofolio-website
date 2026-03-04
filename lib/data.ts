@@ -17,6 +17,8 @@ import ikhwanrinaldi from "@/public/porto/ikhwanrinaldi.png";
 import bdkMedan from "@/public/porto/bdk-medan.png";
 import asbab from "@/public/porto/asbab.png";
 import solmate from "@/public/porto/solmate.png";
+import neuroPerson from "@/public/porto/neuroPerson.jpeg";
+import rdhn from "@/public/porto/rdhn.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -297,7 +299,23 @@ export const projectsData = [
     imageUrl: solmate,
     url: "https://solmate-lilac.vercel.app/",
     githubUrl: ""
-  }
+  },
+  {
+    title: "NeuroPerson",
+    description: "AI-enabled HRIS designed to explore how modern web architecture and applied AI can solve real operational problems in HR systems.",
+    tags: ["Tanstack Start", "TypeScript", "RAG", "tRPC", "Better Auth", "Local Embeddings"],
+    imageUrl: neuroPerson,
+    url: "https://neuro-person.vercel.app/",
+    githubUrl: "https://github.com/Bima1301/neuro-person"
+  },
+  {
+    title: "RDHN Coin & Merchandise",
+    description: "Simple Landing page for crypto coin RDHN with mini e-commerce inside.",
+    tags: ["Sveltekit", "Xendit", "Vercel"],
+    imageUrl: rdhn,
+    url: "https://ramadhan-iota.vercel.app/",
+    githubUrl: ""
+  },
 ] as const;
 
 export const skillsData = [
