@@ -19,6 +19,7 @@ import asbab from "@/public/porto/asbab.png";
 import solmate from "@/public/porto/solmate.png";
 import neuroPerson from "@/public/porto/neuroPerson.jpeg";
 import rdhn from "@/public/porto/rdhn.png";
+import OurMoney from "@/public/porto/ourMoney.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -42,8 +43,20 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Services",
+    hash: "#services",
+  },
+  {
     name: "Experiences",
     hash: "#experiences",
+  },
+  {
+    name: "Testimonials",
+    hash: "#testimonials",
+  },
+  {
+    name: "FAQ",
+    hash: "#faq",
   },
   {
     name: "Contact",
@@ -316,6 +329,14 @@ export const projectsData = [
     url: "https://ramadhan-iota.vercel.app/",
     githubUrl: ""
   },
+  {
+    title: "Our Money",
+    description: "Personal finance app designed to help users track daily income and expenses, manage monthly budgets, monitor financial health in real time, and interact with AI for financial insights.",
+    tags: ["Bun", "Next JS", "Elysia JS", "AI SDK (Vercel)", "Better Auth"],
+    imageUrl: OurMoney,
+    url: "https://our-money.cleveragent.site",
+    githubUrl: ""
+  }
 ] as const;
 
 export const skillsData = [
