@@ -51,14 +51,6 @@ export const links = [
     hash: "#experiences",
   },
   {
-    name: "Testimonials",
-    hash: "#testimonials",
-  },
-  {
-    name: "FAQ",
-    hash: "#faq",
-  },
-  {
     name: "Contact",
     hash: "#contact",
   },
