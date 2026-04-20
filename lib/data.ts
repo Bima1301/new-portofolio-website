@@ -43,10 +43,6 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Services",
-    hash: "#services",
-  },
-  {
     name: "Experiences",
     hash: "#experiences",
   },
