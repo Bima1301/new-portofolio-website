@@ -20,6 +20,7 @@ import solmate from "@/public/porto/solmate.png";
 import neuroPerson from "@/public/porto/neuroPerson.jpeg";
 import rdhn from "@/public/porto/rdhn.png";
 import OurMoney from "@/public/porto/ourMoney.png";
+import nayanika from "@/public/porto/nayanika.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -323,6 +324,14 @@ export const projectsData = [
     tags: ["Bun", "Next JS", "Elysia JS", "AI SDK (Vercel)", "Better Auth"],
     imageUrl: OurMoney,
     url: "https://our-money.cleveragent.site",
+    githubUrl: ""
+  },
+  {
+    title: "Nayanika Photography",
+    description: "Photography and booking management website for showcasing portfolios, organizing services, handling customer bookings, and providing pricing, FAQs, and order tracking.",
+    tags: ["Bun", "Next JS", "Elysia JS", "Better Auth"],
+    imageUrl: nayanika,
+    url: "https://nayanika.cleveragent.site",
     githubUrl: ""
   }
 ] as const;
