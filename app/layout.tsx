@@ -1,17 +1,82 @@
-import Header from "@/components/header";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
+import GaviScriptLoader from "@/components/gavi/common/gavi-script-loader";
+import Lines from "@/components/gavi/common/lines";
+import { JsonLd } from "@/components/seo/json-ld";
+import { absoluteUrl } from "@/lib/seo";
+import { siteConfig } from "@/lib/site-config";
+import type { Metadata } from "next";
 import { Toaster } from "react-hot-toast";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const ogImageUrl = absoluteUrl(siteConfig.ogImage);
 
-export const metadata = {
-  title: "Bima | Personal Portfolio",
-  description: "Bima is a full-stack developer based in Indonesia.",
+export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: siteConfig.title,
+    template: `%s | ${siteConfig.shortName}`,
+  },
+  description: siteConfig.description,
+  keywords: [...siteConfig.keywords],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
+  applicationName: siteConfig.shortName,
+  category: "technology",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: "website",
+    locale: siteConfig.locale,
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [
+      {
+        url: ogImageUrl,
+        width: siteConfig.ogImageWidth,
+        height: siteConfig.ogImageHeight,
+        alt: `${siteConfig.name} — ${siteConfig.role}`,
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: [ogImageUrl],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  icons: {
+    icon: "/assets/imgs/favicon.ico",
+    shortcut: "/assets/imgs/favicon.ico",
+    apple: "/assets/imgs/favicon.ico",
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    yandex: process.env.NEXT_PUBLIC_YANDEX_VERIFICATION,
+  },
+  other: {
+    "geo.region": siteConfig.countryCode,
+    "geo.placename": siteConfig.location,
+  },
 };
 
 export default function RootLayout({
@@ -20,23 +85,29 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body
-        className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
-      >
-        <div className="bg-[#fbe2e3] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
-
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+    <html lang={siteConfig.language}>
+      <head>
+        <link rel="stylesheet" href="/assets/css/plugins.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="me" href={siteConfig.social.github} />
+        <link rel="me" href={siteConfig.social.linkedin} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "window.__gaviLoaderHandled=true;",
+          }}
+        />
+      </head>
+      <body className="sub-bg">
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.body.classList.remove('loaded');",
+          }}
+        />
+        <JsonLd />
+        <Lines />
+        {children}
+        <Toaster position="top-right" />
+        <GaviScriptLoader />
       </body>
     </html>
   );

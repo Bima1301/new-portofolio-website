@@ -1,26 +1,253 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Bima template styles are loaded from /assets/css/style.css */
 
-html {
-  --line-color: #e5e7eb;
+/* Profile photo */
+.intro-profile .box-img .img .profile-photo-wrap {
+  display: block;
+  width: 100%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
+.intro-profile .box-img .img .profile-photo-wrap > span {
+  display: block !important;
+  width: 100% !important;
+  max-height: 300px !important;
 }
 
-.borderBlack {
-  @apply border border-black/10;
+.intro-profile .box-img .img .profile-photo {
+  display: block;
+  width: 100% !important;
+  max-height: 300px !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  object-position: top !important;
+  border-radius: 8px;
 }
 
-.vertical-timeline.vertical-timeline--two-columns {
-  width: 90% !important;
-  margin: 0 auto !important;
+/* Floating icon badges — jangan pakai Next/Image (span ikut stretch) */
+.intro-profile .box-img .img .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-@media (min-width: 1170px) {
-  .vertical-timeline.vertical-timeline--two-columns {
-    width: 100% !important;
+.intro-profile .box-img .img .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+@keyframes profile-icon-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--icon-rotate, 0deg));
   }
+  50% {
+    transform: translateY(-12px) rotate(var(--icon-rotate, 0deg));
+  }
+}
+
+.intro-profile .box-img .img .icon-float-1 {
+  --icon-rotate: 10deg;
+  animation: profile-icon-float 3.8s ease-in-out infinite;
+}
+
+.intro-profile .box-img .img .icon-float-2 {
+  --icon-rotate: 15deg;
+  animation: profile-icon-float 4.2s ease-in-out 0.6s infinite;
+}
+
+.intro-profile .box-img .img .icon-float-3 {
+  --icon-rotate: -10deg;
+  animation: profile-icon-float 3.5s ease-in-out 1.2s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-profile .box-img .img .icon-float-1,
+  .intro-profile .box-img .img .icon-float-2,
+  .intro-profile .box-img .img .icon-float-3 {
+    animation: none;
+  }
+}
+
+/* No fake preloader — content shows immediately */
+.loader-wrap {
+  display: none !important;
+}
+
+/* Portfolio: 2-column Bootstrap grid (no Isotope) */
+.portfolio-grid {
+  height: auto !important;
+  overflow: visible;
+}
+
+.portfolio-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.portfolio-grid .items {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  transform: none !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+
+.portfolio-grid .item {
+  position: relative;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.portfolio-tags .tag {
+  display: inline-block;
+  margin-bottom: 0 !important;
+}
+
+.portfolio-desc {
+  margin: 0;
+  line-height: 1.65;
+  max-width: 100%;
+}
+
+.portfolio-item-body {
+  min-width: 0;
+}
+
+.portfolio-actions {
+  gap: 20px;
+}
+
+/* Work experience timeline — Bima resume style */
+.experience-timeline {
+  position: relative;
+  padding-left: 0;
+}
+
+.experience-timeline .experience-entry {
+  position: relative;
+  padding: 0 0 45px 28px;
+  margin-left: 8px;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.experience-timeline .experience-entry:last-child {
+  padding-bottom: 0;
+  border-left-color: transparent;
+}
+
+.experience-timeline .experience-entry::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--maincolor);
+  box-shadow: 0 0 12px rgba(196, 255, 0, 0.35);
+}
+
+.experience-timeline .experience-entry .date p {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+
+.experience-timeline .experience-entry h5 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.experience-timeline .experience-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 1.25rem;
+  color: var(--maincolor);
+}
+
+.experience-timeline .experience-details {
+  margin: 0;
+  padding: 0;
+}
+
+.experience-timeline .experience-details li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.65;
+  opacity: 0.75;
+  list-style: none;
+}
+
+.experience-timeline .experience-details li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--maincolor);
+}
+
+.experience-timeline .experience-details li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .experience-timeline .experience-entry .date {
+    margin-bottom: 20px;
+  }
+
+  .experience-timeline .experience-entry .date p {
+    white-space: normal;
+  }
+}
+
+/* Scroll reveal — hanya konten, lebih halus */
+.gavi-reveal {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.gavi-reveal--visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.navbar-nav .nav-item a.active {
+  color: var(--main-color, #c9f31d);
 }

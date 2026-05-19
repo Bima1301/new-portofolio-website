@@ -275,7 +275,7 @@ export const projectsData = [
     description: "This project is a profile website for Prof. Ikhwan Rinaldi. I made it with Laravel, ReactJs, TailwindCSS , and Framer Motion. This project has a testimonial and blog feature.",
     tags: ["Laravel", "ReactJs", "TailwindCSS", "Framer Motion", "Aos"],
     imageUrl: ikhwanrinaldi,
-    url: "https://ikhwanrinaldi.com",
+    url: "https://ikhwan.cleveragent.site",
     githubUrl: ""
   },
   {
@@ -291,7 +291,7 @@ export const projectsData = [
     description: "This project is a company profile website for the Asbab Group, showcasing their services and facilitating.",
     tags: ["Laravel", "ReactJs", "TailwindCSS", "Framer Motion", "Typescript"],
     imageUrl: asbab,
-    url: "https://asbabgroup.com",
+    url: "https://asbab.cleveragent.site",
     githubUrl: ""
   },
   {
