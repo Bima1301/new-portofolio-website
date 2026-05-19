@@ -18,7 +18,7 @@ export const siteConfig = {
     "hire full stack developer",
   ],
   url:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://yanuar-bima.vercel.app",
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://bima.cleveragent.site",
   locale: "en_ID",
   language: "en",
   email: "bima.aji1380@gmail.com",
