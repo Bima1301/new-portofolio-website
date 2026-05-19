@@ -40,22 +40,22 @@ export const servicesData = [
 /** Top 4 skills for "My Experience" section */
 export const coreSkillsData = [
   {
-    photo: "/assets/imgs/resume/s2.png",
+    photo: "/assets/imgs/resume/s1.png",
     title: "Next.js",
     persent: "92%",
   },
   {
-    photo: "/assets/imgs/resume/s4.png",
+    photo: "/assets/imgs/resume/s2.png",
     title: "Laravel",
     persent: "90%",
   },
   {
-    photo: "/assets/imgs/resume/s2.png",
+    photo: "/assets/imgs/resume/s3.png",
     title: "Golang",
     persent: "75%",
   },
   {
-    photo: "/assets/imgs/resume/s1.png",
+    photo: "/assets/imgs/resume/s4.png",
     title: "AI Integration",
     persent: "70%",
   },
