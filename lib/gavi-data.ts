@@ -94,6 +94,10 @@ export const PORTFOLIO_INITIAL_COUNT = 4;
 /** Each "Show More" reveals this many additional items */
 export const PORTFOLIO_LOAD_MORE_COUNT = 5;
 
+/** Work experience timeline — show newest first, paginated */
+export const EXPERIENCE_INITIAL_COUNT = 4;
+export const EXPERIENCE_LOAD_MORE_COUNT = 3;
+
 export const testimonialsData = [
   {
     quote:

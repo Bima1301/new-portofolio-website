@@ -1,4 +1,5 @@
-import { coreSkillsData, workExperiencesData } from "@/lib/gavi-data";
+import WorkExperience from "@/components/gavi/home/work-experience";
+import { coreSkillsData } from "@/lib/gavi-data";
 import Image from "next/image";
 
 export default function Skills() {
@@ -42,48 +43,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="work-experience mt-100">
-        <div className="sec-head mb-60">
-          <h6 className="sub-title opacity-7 mb-15">Career Path</h6>
-          <h3>
-            Work <span className="main-color">Experience</span>
-          </h3>
-        </div>
-
-        <div className="resume experience-timeline">
-          {workExperiencesData.map((exp, index) => (
-            <div
-              key={`${exp.title}-${exp.date}`}
-              className="experience-entry"
-            >
-              <div className="row align-items-start">
-                <div className="col-lg-3 col-md-4">
-                  <div className="date">
-                    <p className="experience-period">{exp.date}</p>
-                    {exp.duration ? (
-                      <span className="experience-duration">{exp.duration}</span>
-                    ) : null}
-                  </div>
-                </div>
-                <div className="col-lg-9 col-md-8">
-                  <div className="d-flex align-items-start">
-                    <div className="experience-icon">{exp.icon}</div>
-                    <div className="flex-grow-1">
-                      <h5 className="mb-10">{exp.title}</h5>
-                      <p className="fz-14 main-color mb-20">{exp.location}</p>
-                      <ul className="rest experience-details">
-                        {exp.details.map((detail, i) => (
-                          <li key={i}>{detail}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <WorkExperience />
     </div>
   );
 }
