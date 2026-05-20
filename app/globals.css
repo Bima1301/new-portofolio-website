@@ -161,7 +161,7 @@
   box-shadow: 0 0 12px rgba(196, 255, 0, 0.35);
 }
 
-.experience-timeline .experience-entry .date p {
+.experience-timeline .experience-entry .date .experience-period {
   display: inline-block;
   padding: 6px 16px;
   border-radius: 30px;
@@ -169,7 +169,17 @@
   font-size: 12px;
   letter-spacing: 0.5px;
   margin-bottom: 0;
-  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.experience-timeline .experience-entry .date .experience-duration {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: var(--maincolor);
+  opacity: 0.95;
 }
 
 .experience-timeline .experience-entry h5 {

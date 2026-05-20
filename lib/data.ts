@@ -101,7 +101,7 @@ export const experiencesData = [
     ]
   },
   {
-    title: "PT Arkatama Multi Solusindo (FS Developer)",
+    title: "PT Arkatama Multi Solusindo (FS Developer Intern)",
     location: "Malang, Indonesia",
     icon: React.createElement(CgWorkAlt),
     date: "February 2023 - June 2023",
@@ -115,7 +115,8 @@ export const experiencesData = [
       'Implemented Role Based Access Control (RBAC) as a security feature of the application',
       'Working with Git for version control and collaboration with other developers',
     ]
-  }, {
+  },
+  {
     title: "Meta Mata Indonesia (FS Developer)",
     location: "Jakarta, Indonesia",
     icon: React.createElement(BsCalendarEvent),
@@ -133,20 +134,6 @@ export const experiencesData = [
     ]
   },
   {
-    title: "Nodewave (FE Developer)",
-    location: "Surabaya, Indonesia",
-    icon: React.createElement(LuWebhook),
-    date: "October 2023 - Present (Full Time)",
-    details: [
-      'Expertise in front-end development utilizing React, Next.js, and TailwindCSS',
-      'Created responsive and aesthetically pleasing user interfaces using React',
-      'Incorporated fundamental UI/UX design principles',
-      'Integrated APIs and third-party libraries to augment the application\'s capabilities and features',
-      'Oversaw the maintenance and enhancement of existing web applications',
-      'Actively engaged in debugging and issue resolution'
-    ]
-  },
-  {
     title: "PT Jogiia Digital Indotech (FE Developer)",
     location: "Yogyakarta, Indonesia",
     icon: React.createElement(CgWorkAlt),
@@ -157,7 +144,53 @@ export const experiencesData = [
       'Leveraged React Query for efficient data fetching, caching, and state management',
       'Actively engaged in debugging and resolving issues to ensure optimal performance'
     ]
-  }
+  },
+  {
+    title: "PT Arkatama Multi Solusindo (FS Developer)",
+    location: "Malang, Indonesia",
+    icon: React.createElement(CgWorkAlt),
+    date: "February 2025 - February 2026",
+    details: [
+      "Developed full-stack web applications using Laravel for the backend and ReactJS for the frontend.",
+      "Focused on frontend development by utilizing TanStack Router for efficient routing management and React Query for effective data retrieval and optimal caching.",
+      "Utilized Filament as a modern, user-friendly admin dashboard to efficiently manage backend data and customize the interface to meet internal user requirements.",
+      "Implemented caching on the website to boost performance and efficiency. Developed an attractive, eye-catching user interface (UI) using Framer.",
+      "Used Postman as an API documentation tool.",
+      "Served as a presenter during an industrial visit by delivering an SDLC presentation.",
+ 
+    ]
+  },
+  {
+    title: "Nodewave (FE Developer)",
+    location: "Jakarta, Indonesia",
+    icon: React.createElement(LuWebhook),
+    date: "October 2023 - May 2026 (Full Time)",
+    details: [
+      'Developed TypeScript-based websites using the Next.js framework.',
+      'Integrated APIs to enhance website functionality and ensure efficient backend communication.',
+      'Utilized React Query for data fetching, caching, and efficient application state management, ensuring optimal application performance.',
+      'Leveraged Zustand for simpler and more efficient state management, reducing code complexity.',
+      'Used ShadCN (Tailwind CSS) and MUI to build customizable and responsive user interfaces, ensuring a better user experience.',
+      'Used GitHub version control as a means of collaboration and task distribution in project development.',
+      'Wrote clean, neat, and structured code using TypeScript to ensure maintainable code quality.',
+      'Developed highly optimized websites, ensuring fast and responsive performance across various devices.',
+      'Used Postman to test API endpoints and ensure proper integration.'
+
+    ]
+  },
+  {
+    title: "Akasia (Back End Developer)",
+    location: "Jakarta, Indonesia",
+    icon: React.createElement(MdOutlineInventory2),
+    date: "January 2026 - Present (Full Time)",
+    details: [
+      "Built and maintained backend services for payment and lending systems using PHP (Laravel), including integrations with multiple banking partners.",
+      "Ensured code quality by writing and adjusting automated tests for every feature or system change in a financial-grade environment.",
+      "Optimized background jobs by removing redundant tasks and implementing retry mechanisms with configurable attempts and delay intervals to reduce transaction failures.",
+      "Managed ticket workflows end-to-end using Jira and Bitbucket, including defining DoD before implementation to ensure alignment with team leads.",
+      "Implemented and maintained automated tests for every feature addition or system adjustment, ensuring code quality and system reliability in a financial-grade environment.",
+    ]
+  },
 ] as const;
 
 export const projectsData = [

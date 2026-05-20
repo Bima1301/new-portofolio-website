@@ -59,7 +59,10 @@ export default function Skills() {
               <div className="row align-items-start">
                 <div className="col-lg-3 col-md-4">
                   <div className="date">
-                    <p>{exp.date}</p>
+                    <p className="experience-period">{exp.date}</p>
+                    {exp.duration ? (
+                      <span className="experience-duration">{exp.duration}</span>
+                    ) : null}
                   </div>
                 </div>
                 <div className="col-lg-9 col-md-8">

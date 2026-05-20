@@ -1,4 +1,5 @@
 import { projectsData, experiencesData } from "./data";
+import { getExperienceDuration } from "./experience-duration";
 import { siteConfig } from "./site-config";
 
 export const navLinks = [
@@ -61,8 +62,11 @@ export const coreSkillsData = [
   },
 ] as const;
 
-/** Work experience, newest first */
-export const workExperiencesData = [...experiencesData].reverse();
+/** Work experience, newest first — with computed duration */
+export const workExperiencesData = [...experiencesData].reverse().map((exp) => ({
+  ...exp,
+  duration: getExperienceDuration(exp.date),
+}));
 
 function getProjectLink(project: (typeof projectsData)[number]) {
   if (project.url) return project.url;
