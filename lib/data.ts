@@ -21,6 +21,7 @@ import neuroPerson from "@/public/porto/neuroPerson.jpeg";
 import rdhn from "@/public/porto/rdhn.png";
 import OurMoney from "@/public/porto/ourMoney.png";
 import nayanika from "@/public/porto/nayanika.png";
+import paymentProxy from "@/public/porto/paymentProxy.png";
 import { GiVillage } from "react-icons/gi";
 import { MdOutlineInventory2 } from "react-icons/md";
 import { BsCalendarEvent } from "react-icons/bs";
@@ -157,7 +158,7 @@ export const experiencesData = [
       "Implemented caching on the website to boost performance and efficiency. Developed an attractive, eye-catching user interface (UI) using Framer.",
       "Used Postman as an API documentation tool.",
       "Served as a presenter during an industrial visit by delivering an SDLC presentation.",
- 
+
     ]
   },
   {
@@ -336,6 +337,14 @@ export const projectsData = [
     githubUrl: ""
   },
   {
+    title: "RDHN Coin & Merchandise",
+    description: "Simple Landing page for crypto coin RDHN with mini e-commerce inside.",
+    tags: ["Sveltekit", "Xendit", "Vercel"],
+    imageUrl: rdhn,
+    url: "https://ramadhan-iota.vercel.app/",
+    githubUrl: ""
+  },
+  {
     title: "NeuroPerson",
     description: "AI-enabled HRIS designed to explore how modern web architecture and applied AI can solve real operational problems in HR systems.",
     tags: ["Tanstack Start", "TypeScript", "RAG", "tRPC", "Better Auth", "Local Embeddings"],
@@ -344,11 +353,12 @@ export const projectsData = [
     githubUrl: "https://github.com/Bima1301/neuro-person"
   },
   {
-    title: "RDHN Coin & Merchandise",
-    description: "Simple Landing page for crypto coin RDHN with mini e-commerce inside.",
-    tags: ["Sveltekit", "Xendit", "Vercel"],
-    imageUrl: rdhn,
-    url: "https://ramadhan-iota.vercel.app/",
+    title: "Payment Proxy",
+    description:
+      "Multi-gateway payment webhook aggregator that receives notifications from Midtrans, Xendit, and DOKU, validates signatures at ingress, routes by order_id prefix, and forwards signed payloads to each app's endpoint with HMAC verification.",
+    tags: ["Next.js", "Elysia", "PostgreSQL", "Drizzle", "Better Auth", "Midtrans", "Xendit", "DOKU"],
+    imageUrl: paymentProxy,
+    url: "https://payment-proxy.cleveragent.site/",
     githubUrl: ""
   },
   {
@@ -366,7 +376,7 @@ export const projectsData = [
     imageUrl: nayanika,
     url: "https://nayanika.cleveragent.site",
     githubUrl: ""
-  }
+  },
 ] as const;
 
 export const skillsData = [
