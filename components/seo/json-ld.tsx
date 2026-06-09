@@ -1,4 +1,5 @@
 import { absoluteUrl, buildPortfolioItemListSchema, seoSkills } from "@/lib/seo";
+import { productCatalogData } from "@/lib/gavi-data";
 import { siteConfig } from "@/lib/site-config";
 
 export function JsonLd() {
@@ -79,25 +80,26 @@ export function JsonLd() {
     knowsAbout: [...seoSkills],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Development Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Frontend Development",
-            description: "React, Next.js, TypeScript UI development",
-          },
+      name: "Jasa Digital — Daftar Produk",
+      itemListElement: productCatalogData.map((product, index) => ({
+        "@type": "Offer",
+        position: index + 1,
+        sku: product.sku,
+        price: product.priceIdr,
+        priceCurrency: "IDR",
+        itemOffered: {
+          "@type": "Service",
+          name: product.name,
+          description: product.description,
+          category: product.category,
         },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Full Stack Development",
-            description: "End-to-end web apps with Laravel, Node, and databases",
-          },
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          price: product.priceIdr,
+          priceCurrency: "IDR",
+          valueAddedTaxIncluded: false,
         },
-      ],
+      })),
     },
   };
 

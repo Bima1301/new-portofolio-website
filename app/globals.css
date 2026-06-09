@@ -261,3 +261,94 @@
 .navbar-nav .nav-item a.active {
   color: var(--main-color, #c9f31d);
 }
+
+/* Product catalog — Midtrans compliance (IDR pricing) */
+.product-catalog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.product-catalog-table caption.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.product-catalog-table th,
+.product-catalog-table td {
+  padding: 16px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  vertical-align: top;
+  text-align: left;
+}
+
+.product-catalog-table th {
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.product-catalog-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.product-catalog-table .product-price {
+  font-weight: 600;
+  color: var(--maincolor);
+  white-space: nowrap;
+}
+
+.product-catalog-table td:first-child {
+  font-size: 12px;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .product-catalog-table thead {
+    display: none;
+  }
+
+  .product-catalog-table tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .product-catalog-table td {
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 12px 16px;
+  }
+
+  .product-catalog-table td:last-child {
+    border-bottom: none;
+  }
+
+  .product-catalog-table td::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    opacity: 0.6;
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .product-catalog-table td:first-child::before {
+    content: "";
+    display: none;
+  }
+}
