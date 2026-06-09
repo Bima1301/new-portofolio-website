@@ -1,12 +1,14 @@
 export const siteConfig = {
   name: "Yanuar Bima",
+  fullName: "Yanuar Bimantoro Aji",
   displayName: "Yanuar Bima",
   shortName: "Bima",
   title: "Yanuar Bima | Full Stack Developer Portfolio",
   description:
-    "Yanuar Bima (Bima) is a Full Stack Developer from Indonesia specializing in React, Next.js, Laravel, Golang, and modern web applications. Available for freelance and full-time opportunities.",
+    "Yanuar Bimantoro Aji (Yanuar Bima) is a Full Stack Developer from Indonesia specializing in React, Next.js, Laravel, Golang, and modern web applications. Available for freelance and full-time opportunities.",
   keywords: [
     "Yanuar Bima",
+    "Yanuar Bimantoro Aji",
     "Bima developer",
     "Full Stack Developer Indonesia",
     "React developer",

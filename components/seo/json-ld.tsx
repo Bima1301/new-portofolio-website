@@ -14,7 +14,7 @@ export function JsonLd() {
     "@type": "Person",
     "@id": personId,
     name: siteConfig.name,
-    alternateName: siteConfig.shortName,
+    alternateName: [siteConfig.fullName, siteConfig.shortName],
     url: pageUrl,
     image: imageUrl,
     email: `mailto:${siteConfig.email}`,
